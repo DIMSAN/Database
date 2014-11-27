@@ -1,0 +1,1 @@
+/home/maris/Work/Baltikon/app/views/edit.blade.php
