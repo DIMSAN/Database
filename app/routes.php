@@ -12,3 +12,5 @@
 */
 
 Route::resource('clients', 'HomeController');
+
+Route::get('search' , 'SearchController@index');

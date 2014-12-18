@@ -10,7 +10,8 @@ class HomeController extends BaseController {
      */
     public function index()
     {
-        // get all the nerds
+
+   
         $clients = Clients::all();
 
         // load the view and pass the nerds
@@ -25,7 +26,7 @@ class HomeController extends BaseController {
      */
     public function create()
     {
-        //
+        return View::make('clients.create');
     }
 
     /**
@@ -82,6 +83,6 @@ class HomeController extends BaseController {
         //
     }
 
-
+ 
 
 }
