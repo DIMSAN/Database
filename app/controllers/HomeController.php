@@ -47,7 +47,11 @@ class HomeController extends BaseController {
      */
     public function show($id)
     {
-        //
+        $client = Clients::find($id);
+
+        // show the view and pass the nerd to it
+        return View::make('clients.show')
+            ->with('client', $client);
     }
 
     /**

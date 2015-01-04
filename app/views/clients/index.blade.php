@@ -52,7 +52,7 @@
         
             <td>{{ $value->telephone }}</td>
             <td>{{ $value->e_mail }}</td>
-            <td> <a href="{{ URL::to('clients/' . $value->id . '/edit') }}">{{ HTML::image('img/search2.svg', 'click', array('width' => 35 , 'height' => 35)) }}</a></td>
+            <td> <a href="{{ URL::to('clients/' . $value->id) }}">{{ HTML::image('img/search2.svg', 'click', array('width' => 35 , 'height' => 35)) }}</a></td>
 
             <!-- we will also add show, edit, and delete buttons -->
        <!--      <td> -->

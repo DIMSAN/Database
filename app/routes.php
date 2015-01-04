@@ -14,3 +14,9 @@
 Route::resource('clients', 'HomeController');
 
 Route::get('search' , 'SearchController@index');
+
+Route::post('search', 'SearchController@clientsSearch');
+
+Route::resource('payments', 'PaymentsController');
+Route::resource('contacts', 'ContactsController');
+

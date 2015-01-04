@@ -33,18 +33,36 @@
     <ul class="nav navbar-nav">
          <li><a href="{{ URL::to('clients') }}">Sakums</a></li>
          <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Izveidot<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pievienot<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="clients/create">Ierakstu</a></li>
+            <li><a href="/clients/create">Klientu</a></li>
+            <li><a href="/payments/create">Maksajumu</a></li>
+            <li><a href="clients/create">Klienta kontaktus</a></li>
             <li class="divider"></li>
             <li><a href="#">Lietotaju</a></li>
             <li class="divider"></li>
             <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Apskatit<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/clients">Klientus</a></li>
+            <li><a href="/payments">Maksajumus</a></li>
+            <li><a href="/contacts">Klienta kontaktus</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Lietotajus</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
         <li><a href="{{ URL::to('search') }}">Meklešana</a>
-       
+        <li><a href="{{ URL::to('clients') }}">Mans profils</a></li>
+        <li><a href="{{ URL::to('clients') }}">Lietotaji</a></li>    
     </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{ URL::to('clients') }}">Beigt darbu &zwnj;</a></li>
+        </ul>
 </nav>
 
 

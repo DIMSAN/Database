@@ -13,6 +13,10 @@ class SearchController extends \BaseController {
 		 	return View::make('clients.search');
 	}
 
-	
+	public function clientsSearch() {
+
+		$q = Clients::find(2)->payments;
+			var_dump($q);
+	}
 
 }
